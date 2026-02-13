@@ -1,5 +1,40 @@
 # Leadership Analytics Release Notes
 
+##  2026.2.6
+This month's release will include backend and user experience improvements across Podium dashboards. Some of the updates improve data accuracy and consistency (including incident identification, student counts, and suppression logic), expand cross-district visibility through enhanced filtering, and refine dashboard usability with clearer filters and corrected table layouts. Documentation has also been updated to reflect the support portal and updated training documentation.
+
+Improvements
+- Users can now see a currently enrolled student's cross-school within-district assessment history in the Student Profile dashboard, which will allow them to get a deeper understanding of prior assessment performance.
+- The Course Grades Snapshot now has separate filters for Grading Period and Grade Type.
+- Users with access to multiple districts can now view district information in the School table across all dashboards
+- Counts of students by subgroup in the Profile dashboard has been updated to count unique student - district associations.
+- An update has been made to ensure Incident IDs are uniquely counted by school rather than district. This may cause small changes in incident ID numbers that better reflect the number of incidents.
+- Suppression of district metrics was altered to suppress results if the total number of students included across selections <20 rather than suppressing if one district in the selection had <20 students.
+- The instruction page on Accessing and Navigating Podium has been updated to include the new Portal login for Podium.
+
+Bugs and other fixes
+- A bug that showed the order of columns as incorrect on the Enrollment Dashboard has been fixed to show the corrected order.
+- Updated charts to reference grade level indicator in Profile and Section Profile. This was not a bug impacting any current implementations.
+
+## Release version: 2026.1.8
+The January release for Podium includes several dashboard enhancements that were completed to improve performance, scalability, and usability. Updates include more sustainable data models, expanded access to state-level growth results, improved filtering and table views, clearer chart labeling, alignment of dashboard layouts and color mappings, increased data capacity for large districts, and added context in student assessment views.
+
+Improvements
+- Profile Dashboard: Users with access to multiple districts can now view district information in the Summary table when multiple districts are selected 
+- Some chart labels have been updated to ensure consistency across dashboards. Chart labels ask a questions, which the chart answers. 
+- Section Information tables in the Section Profile dashboard have had row limits increased to 100,000 to account for larger districts. 
+- District Metrics in the Assessment and Behavior Dashboards have been updated, allowing for main metrics to come first. 
+- Models for the Behavior, Course, and Enrollment dashboards were completed to increase model performance and sustainability. 
+- The WI Forward exam has updated color mapping to align to performance levels.
+
+Advanced Add-ons
+- State level growth results will now load through district warehouses. Users in a state with District dashboard access will now be able to view Growth results from the state. 
+- Legends have been added to identify student group charts in the Growth dashboard when charts are downloaded, or the chart is shown in full-screen format. 
+
+Bugs and other fixes
+- A bug in the Growth dashboard interrupted filters after the "Lowest Performing 20% of Students" was selected in the "Select Growth Metric" filter. This issue has been resolved to ensure uninterrupted filter selection functionality for users.
+- The Student Profile Assessment table has had subject and grade columns added to make a more stable view for users.
+
 ## Release version: 2025.12.04
 The December 2025 Leadership Analytics release includes new filters for Gifted & Talented and Homeless student groups, enabled multi-district users to select multiple LEAs, and improved error pages for clearer troubleshooting. The Assessment Dashboard now features updates to performance distribution and refined performance colors. Enrollment Status filtering is now more intuitive, and backend model updates improve overall performance. We also introduced the new Predictions and Targets Dashboard and resolved several issues, including API credential stability, behavior chart errors, and table ordering in downloads.
 
